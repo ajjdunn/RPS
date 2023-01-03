@@ -1,12 +1,11 @@
-// Prompt user for a selection and return the value for later use
+// Prompt user for a selection and return the value
 function playerSelection() {
-  const playerChoice = prompt(
+  let playerChoice = prompt(
     "Do you choose Rock, Paper, or Scissors"
   ).toLocaleLowerCase();
   console.log("Player chooses:", playerChoice);
   return playerChoice;
 }
-// playerSelection();
 
 // This function returns one of three choices at random
 function compSelection() {
@@ -21,7 +20,6 @@ function compSelection() {
   console.log("Computer chooses:", compChoice);
   return compChoice;
 }
-// compSelection();
 
 //this function compares player input and random computer selection and returns a string
 function playRound(playerChoice, compChoice) {
@@ -51,10 +49,10 @@ console.log(playRound(playerSelection(), compSelection()));
 function game() {
   let playerScore = 0;
   let computerScore = 0;
-  let roundResult = playRound(playerChoice, compChoice);
+  let roundResult = playRound();
 
   for (let counter = 0; counter <= 5; ++counter) {
-    playRound(playerChoice, compChoice);
+    playRound();
 
     if (
       roundResult === "You win! Rock beats Scissors" ||
@@ -71,10 +69,13 @@ function game() {
     }
   }
   if (playerScore > computerScore) {
+    console.log("You win" + playerScore + " to " + computerScore + ".");
     return "You win" + playerScore + " to " + computerScore + ".";
   } else if (playerScore < computerScore) {
+    console.log("You lose " + computerScore + " to " + playerScore + ".");
     return "You lose" + computerScore + " to " + playerScore + ".";
   } else {
+    console.log("It was a tie, you both won the same number of rounds.");
     return "It was a tie, you both won the same number of rounds.";
   }
 }
