@@ -32,6 +32,8 @@ function playRound() {
   let playerChoice = playerSelection();
   let result = "";
 
+  // Compare choices
+
   if (
     (playerChoice == "rock" && computerSelection == "scissors") ||
     (playerChoice == "scissors" && computerSelection == "paper") ||
@@ -47,6 +49,8 @@ function playRound() {
       playerScore +
       "\nComputer score: ";
     console.log(result);
+
+    // "End" the game once a player reaches 5 points
 
     if (playerScore == 5) {
       result += "You won the game! Reload the page to play again";
