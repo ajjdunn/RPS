@@ -26,6 +26,7 @@ function compSelection() {
   return compChoice;
 }
 
+//plays the game in a loop until 5 points is reached
 function playRound() {
   let computerSelection = compSelection();
   let playerChoice = playerSelection();
