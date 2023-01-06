@@ -86,28 +86,3 @@ function playRound() {
 }
 
 playRound();
-// //this function compares player input and random computer selection and returns a string
-// function playRound() {
-//   if (playerChoice == "rock" && compChoice == "scissors") {
-//     return "You win! Rock beats Scissors";
-//   } else if (playerChoice == "rock" && compChoice == "paper") {
-//     return "You lose! Paper beats Rock";
-//   } else if (playerChoice == "rock" && compChoice == "rock") {
-//     return "Tie game!";
-//   } else if (playerChoice == "scissors" && compChoice == "rock") {
-//     return "You lose! Rock beats Scissors";
-//   } else if (playerChoice == "scissors" && compChoice == "paper") {
-//     return "You win! Scissors beats Paper";
-//   } else if (playerChoice == "scissors" && compChoice == "scissors") {
-//     return "Tie game!";
-//   } else if (playerChoice == "paper" && compChoice == "rock") {
-//     return "You win! Paper beats Rock";
-//   } else if (playerChoice == "paper" && compChoice == "scissors") {
-//     return "You lose! Scissors beats Paper";
-//   } else if (playerChoice == "paper" && compChoice == "paper") {
-//     return "Tie game!";
-//   }
-// }
-// // console.log(playRound(playerSelection(), compSelection()));
-// playerSelection();
-// compSelection();
