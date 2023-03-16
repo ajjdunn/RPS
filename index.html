@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="javascript.js"></script>
   </head>
   <body>
-    <div>
-      <input
-        type="button"
-        value="playRound"
-        id="btnClick"
-        onclick="playRound();"
-      />
+    <h1>ROCK PAPER SCISSORS</h1>
+    <div class="choice-container">
+      <input type="button" class="button" value="Rock" id="btnClick" />
+      <input type="button" class="button" value="Paper" id="btnClick" />
+      <input type="button" class="button" value="Scissors" id="btnClick" />
     </div>
+    <div class="result-container">
+      <p>Player chose:</p>
+      <p>Computer chose:</p>
+    </div>
+    <h2>Scoreboard</h2>
+
+    <div class="scoreboard">
+      <p>Player Score:</p>
+      <p>Computer Score:</p>
+      <p></p>
+    </div>
+    <h2>WINNER IS:</h2>
   </body>
 </html>
