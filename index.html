@@ -4,28 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>RPS with UI</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="javascript.js"></script>
   </head>
   <body>
-    <h1>ROCK PAPER SCISSORS</h1>
+    <h1>CHOOSE YOUR WEAPON</h1>
     <div class="choice-container">
-      <input type="button" class="button" value="Rock" id="btnClick" />
-      <input type="button" class="button" value="Paper" id="btnClick" />
-      <input type="button" class="button" value="Scissors" id="btnClick" />
+      <button class="button" id="rock">Rock</button>
+      <button class="button" id="paper">Paper</button>
+      <button class="button" id="scissors">Scissors</button>
     </div>
     <div class="result-container">
-      <p>Player chose:</p>
-      <p>Computer chose:</p>
+      <p id="player-chose">Player chose:</p>
+      <p id="computer-chose">Computer chose:</p>
     </div>
-    <h2>Scoreboard</h2>
-
+    <p id="result">Result:</p>
     <div class="scoreboard">
-      <p>Player Score:</p>
-      <p>Computer Score:</p>
-      <p></p>
+      <button class="hidden | play-again | PAbutton" id="play-again">
+        Play again
+      </button>
     </div>
-    <h2>WINNER IS:</h2>
   </body>
+  <script src="javascript.js"></script>
 </html>
